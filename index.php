@@ -9,7 +9,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>在线制作favicon图标</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="由刀客源码免费提供在线制作favicon图标" />
+	<meta name="description" content="
+					  免费提供在线制作favicon图标" />
     <meta name="author" content="laodong.me" />
 	<!-- Themify Icons -->
 	<link rel="stylesheet" href="css/themify-icons.css">
@@ -200,7 +201,7 @@ if(isset($_GET['do'])){
 				<div class="fh5co-spacer fh5co-spacer-md"></div>
 				<div class="row">
 					<div class="col-md-6">
-						<p class="fh5co-copyright">2021&copy;版权所有.<a href="#">在线ICO图标制作</a> </p>
+						<p class="fh5co-copyright">&copy; <a href="http://github.com/tdouguo" target="_blank" title="">tdouguo</a> </p>
 					</div>
 					
 				</div>
