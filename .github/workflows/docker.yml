@@ -1,0 +1,27 @@
+name: Docker
+
+on:
+  push:
+    branches:
+      - main  # 或者你的主要分支名称
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Login to Aliyun Container Registry
+      uses: docker/login-action@v1
+      with:
+        registry: registry.cn-hangzhou.aliyuncs.com
+        username: ${{ secrets.ALIYUN_USERNAME }}
+        password: ${{ secrets.ALIYUN_PASSWORD }}
+
+    - name: Build and push
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: true
+        tags: registry.cn-beijing.aliyuncs.com/tdouguo/ico:latest
